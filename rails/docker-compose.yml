@@ -1,0 +1,32 @@
+version: '3'
+services:
+  pgsql:
+    image: postgres:15
+    environment:
+      POSTGRES_PASSWORD: password
+      TZ: Asia/Tokyo
+    ports:
+      - 5432:5432
+    volumes:
+      - mydb:/var/lib/postgresql/data
+  app:
+    build: docker/rails/.
+    volumes:
+      - ./src:/home:cached
+      #- type: bind
+      #  source: ./docker/php-fpm/php.ini
+      #  target: /usr/local/etc/php/php-ini
+    links:
+      - pgsql
+    ports:
+      - "3000:3000"
+    #entrypoint:
+    #  - bash
+    command: >
+     bash -c "bundle config set path '/home/vendor/bundle' && bundle install && bundle exec rails server -b 0.0.0.0"
+    environment:
+      DB_HOST: pgsql
+      TZ: Asia/Tokyo
+volumes:
+  mydb:
+    driver: local

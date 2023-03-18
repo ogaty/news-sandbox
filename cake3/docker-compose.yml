@@ -1,0 +1,42 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: password
+      TZ: 'Asia/Tokyo'
+    volumes:
+      - mydb:/var/lib/mysql
+      - ./docker/mysql/conf:/etc/mysql/conf.d
+      - ./docker/mysql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+    ports:
+      - "23306:3306"
+  nginx:
+    build: docker/nginx/.
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "80:80"
+      - "443:443"
+    links:
+      - app
+  app:
+    build: docker/php-fpm/.
+    volumes:
+      - ./src:/var/www/html:cached
+      - type: bind
+        source: ./docker/php-fpm/php.ini
+        target: /usr/local/etc/php/php-ini
+    links:
+      - mysql
+    ports:
+      - "3000:3000"
+    environment:
+      DB_HOST: mysql
+      TZ: Asia/Tokyo
+volumes:
+  mydb:
+    driver: local
