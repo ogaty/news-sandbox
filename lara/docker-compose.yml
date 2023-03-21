@@ -33,6 +33,9 @@ services:
       - type: bind
         source: ./docker/php-fpm/php.ini
         target: /usr/local/etc/php/php-ini
+      - type: bind
+        source: ./docker/php-fpm/www.conf
+        target: /usr/local/etc/php-fpm.d/www.conf
     links:
       - mysql
     ports:

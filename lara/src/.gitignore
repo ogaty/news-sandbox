@@ -3,7 +3,9 @@
 /public/build
 /public/hot
 /public/storage
+/public/media/
 /storage/*.key
+/storage/media-library/temp
 /vendor
 .env
 .env.backup
