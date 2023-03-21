@@ -5,7 +5,7 @@
 
     <section>
         <div>
-            <a href="{{ route('admin.news.index') }}">News</a>
+            <a href="{{ route('mypage.news.index') }}">News</a>
         </div>
     </section>
 

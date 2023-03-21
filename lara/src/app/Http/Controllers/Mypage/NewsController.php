@@ -32,9 +32,12 @@ class NewsController extends Controller
             'body' => $request->input('body'),
         ]);
 
-        $news
-            ->addMediaFromRequest('media')
-            ->toMediaCollection();
+        if ($request->input('media')) {
+            $news
+                ->addMediaFromRequest('media')
+                ->toMediaCollection();
+        }
+
 
 
         return redirect('/mypage/news/index')->with(['message' => 'success']);
@@ -65,6 +68,7 @@ class NewsController extends Controller
 
     public function delete($id)
     {
+        News::destroy($id);
         return redirect('/mypage/news/index')->with(['message' => 'success']);
     }
 

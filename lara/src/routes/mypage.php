@@ -7,7 +7,7 @@ use App\Http\Controllers\Mypage;
 Route::group(['middleware' => 'verified'], function() {
     Route::get('/', [Mypage\HomeController::class, 'index'])->middleware(['verified'])->name('home');
 
-    Route::get('/news/', [Mypage\NewsController::class, 'index'])->name('news.index');
+    Route::get('/news/', [Mypage\NewsController::class, 'index'])->name('news.top');
     Route::get('/news/index', [Mypage\NewsController::class, 'index'])->name('news.index');
     Route::get('/news/', [Mypage\NewsController::class, 'index'])->name('news.index');
     Route::get('/news/create', [Mypage\NewsController::class, 'create'])->name('news.create');
