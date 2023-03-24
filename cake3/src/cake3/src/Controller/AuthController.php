@@ -40,7 +40,7 @@ class AuthController extends AppController
         $session->write('welcome', 'welcome');
 
         return $this->redirect([
-            'controller' => 'Home',
+            'controller' => 'Mypage',
             'action' => 'index',
         ]);
     }

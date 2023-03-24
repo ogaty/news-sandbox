@@ -9,7 +9,6 @@ RUN apt-get update && apt-get install -y \
         libpng-dev \
         libjpeg-dev \
         libfreetype6-dev \
-        libonig-dev \
         default-mysql-client \
   && docker-php-ext-install -j$(nproc) iconv pdo_mysql mysqli intl zip pcntl \
   && docker-php-ext-configure gd --enable-gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/ \

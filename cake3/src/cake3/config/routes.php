@@ -57,6 +57,20 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->applyMiddleware('csrf');
 
+    Router::scope('/mypage', function ($routes) {
+        $routes->connect('/', ['controller' => 'Mypage']);
+        $routes->connect('/news/', ['controller' => 'News']);
+        $routes->connect('/news/create', ['controller' => 'News', 'action' => 'create']);
+        $routes->connect('/news/store', ['controller' => 'News', 'action' => 'store']);
+        $routes->connect('/news/edit/:id', ['controller' => 'News', 'action' => 'edit'])
+            ->setPatterns(['id' => '\d+'])
+            ->setPass(['id']);
+        $routes->connect('/news/delete', ['controller' => 'News', 'action' => 'delete']);
+        $routes->connect('/news/:id', ['controller' => 'News', 'action' => 'show'])
+            ->setPatterns(['id' => '\d+'])
+            ->setPass(['id']);
+    });
+
     /*
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
      * its action called 'display', and we pass a param to select the view file

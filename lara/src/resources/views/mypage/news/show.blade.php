@@ -7,10 +7,12 @@
         <div>
             <h1>{{ $newsData->title }}</h1>
             <div>
-                {{ $newsData->body }}
+                {!! $newsData->body !!}
             </div>
             <div>
-                <img src="{{ $mediaItems[0]->getUrl() }}">
+                @if (count($mediaItems) > 0)
+                    <img src="{{ $mediaItems[0]->getUrl() }}">
+                @endif
             </div>
         </div>
     </section>
