@@ -72,4 +72,14 @@ class NewsController extends Controller
         return redirect('/mypage/news/index')->with(['message' => 'success']);
     }
 
+    public function test1(Request $request)
+    {
+        if ($request->is('post')) {
+            dd($request->file('img'));
+        }
+
+        return view('test1');
+
+    }
+
 }

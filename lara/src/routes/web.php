@@ -17,3 +17,6 @@ use App\Http\Controllers;
 Route::get('/', [Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/news/{id}', [Controllers\HomeController::class, 'show'])->name('news.show');
 
+Route::get('/test1', [Controllers\Mypage\NewsController::class, 'test1']);
+
+Route::post('/test1', [Controllers\Mypage\NewsController::class, 'test1']);

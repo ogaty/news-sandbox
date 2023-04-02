@@ -45,6 +45,28 @@ return static function (RouteBuilder $routes) {
     $routes->setRouteClass(DashedRoute::class);
 
     $routes->scope('/', function (RouteBuilder $builder) {
+
+        $builder->connect('/', ['controller' => 'Main']);
+        $builder->connect('/:id', ['controller' => 'Main', 'action' => 'show'])
+            ->setPatterns(['id' => '\d+'])
+            ->setPass(['id']);
+
+        $builder->scope('/mypage', function ($routes) {
+            $routes->connect('/', ['controller' => 'Mypage/Mypage']);
+            $routes->connect('/news/', ['controller' => 'Mypage/News']);
+            $routes->connect('/news/create', ['controller' => 'Mypage/News', 'action' => 'create']);
+            $routes->connect('/news/store', ['controller' => 'Mypage/News', 'action' => 'store']);
+            $routes->connect('/news/edit/:id', ['controller' => 'Mypage/News', 'action' => 'edit'])
+                ->setPatterns(['id' => '\d+'])
+                ->setPass(['id']);
+            $routes->connect('/news/delete', ['controller' => 'Mypage/News', 'action' => 'delete']);
+            $routes->connect('/news/:id', ['controller' => 'Mypage/News', 'action' => 'show'])
+                ->setPatterns(['id' => '\d+'])
+                ->setPass(['id']);
+
+        });
+
+
         /*
          * Here, we are connecting '/' (base path) to a controller called 'Pages',
          * its action called 'display', and we pass a param to select the view file
