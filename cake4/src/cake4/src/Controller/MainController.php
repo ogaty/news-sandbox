@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\View\AjaxView;
 use Cake\ORM\TableRegistry;
 /**
  * MainController Controller
@@ -25,6 +26,7 @@ class MainController extends AppController
     {
         $this->News = TableRegistry::getTableLocator()->get('News');
         $this->set('newsList', $this->News->find('all'));
+        $this->render('/Main/index', 'error');
 
 //        $this->render('/Main/index');
 //        $mainController = $this->paginate($this->MainController);
