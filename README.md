@@ -1,12 +1,27 @@
 # cake4
-cakePHP4 / vueJS / mysql
+- Framework: cakePHP4 
+- Front Framework: vueJS
+- DB: mysql
+- lint: phpcs
+- Front Build: vite-vue
 
-# lara
-Laravel/ LiveWire / OpenAdmin / mysql
+# lara-openadmin
+- Framework: Laravel10
+- Front Framework: LiveWire
+- Admin: OpenAdmin
+- DB: mysql
+- lint: Larastan
+- Front Build: vite
 
 # rails-webpack
-Rails7 / Webpack / pgsql
+- Framework: Rails7
+- Front Framework: none
+- DB: pgsql
+- Front Build: webpack
 
 # rails-vite
-Rails7 / Vite-React / pgsql
+- Framework: Rails7
+- Front Framework: none
+- DB: pgsql
+- Front Build: vite-react
 
