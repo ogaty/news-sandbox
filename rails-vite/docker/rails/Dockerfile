@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y \
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash
 RUN apt-get install -y nodejs
 RUN npm install --global yarn
-
-WORKDIR /home
+RUN apt-get install vim
 
 CMD [ "tail", "-f", "/dev/null" ]

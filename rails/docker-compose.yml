@@ -12,7 +12,7 @@ services:
   app:
     build: docker/rails/.
     volumes:
-      - ./src:/home:cached
+      - ./src:/root:cached
     links:
       - pgsql
     ports:

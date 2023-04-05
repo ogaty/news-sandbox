@@ -1,4 +1,4 @@
-FROM ruby:3.2
+FROM ruby:3.2.2
 RUN apt-get update
 
 RUN apt-get update && apt-get install -y \
@@ -10,7 +10,8 @@ RUN apt-get update && apt-get install -y \
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash
 RUN apt-get install -y nodejs
 RUN npm install --global yarn
+RUN apt-get install -y vim
 
-WORKDIR /home
+WORKDIR /root
 
 CMD [ "tail", "-f", "/dev/null" ]
