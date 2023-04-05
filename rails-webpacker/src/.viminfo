@@ -11,10 +11,10 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
-:wq
-|2,0,1680663644,,"wq"
 :q
-|2,0,1680663632,,"q"
+|2,0,1680664199,,"q"
+:wq
+|2,0,1680664144,,"wq"
 
 # Search String History (newest to oldest):
 
@@ -25,58 +25,251 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
+""-	CHAR	0
+	/
+|3,1,36,0,1,0,1680664143,"/"
 
 # File marks:
-'0  68  21  ~/Gemfile
-|4,48,68,21,1680663644,"~/Gemfile"
-'1  67  0  ~/Gemfile
-|4,49,67,0,1680663632,"~/Gemfile"
-'2  67  0  ~/Gemfile
-|4,50,67,0,1680663632,"~/Gemfile"
-'3  1  0  ~/yarn.lock
-|4,51,1,0,1680662881,"~/yarn.lock"
-'4  4  10  ~/Gemfile
-|4,52,4,10,1680662807,"~/Gemfile"
-'5  4  10  ~/Gemfile
-|4,53,4,10,1680662807,"~/Gemfile"
-'6  4  10  ~/Gemfile
-|4,54,4,10,1680662807,"~/Gemfile"
-'7  4  10  ~/Gemfile
-|4,55,4,10,1680662807,"~/Gemfile"
+'0  1  0  ~/app/assets/builds/application.js
+|4,48,1,0,1680664199,"~/app/assets/builds/application.js"
+'1  2  0  ~/app/javascript/application.js
+|4,49,2,0,1680664161,"~/app/javascript/application.js"
+'2  2  0  ~/app/javascript/application.js
+|4,50,2,0,1680664144,"~/app/javascript/application.js"
+'3  1  0  ~/app/javascript/application.js
+|4,51,1,0,1680664125,"~/app/javascript/application.js"
+'4  1  0  ~/app/javascript/application.js
+|4,52,1,0,1680664125,"~/app/javascript/application.js"
+'5  1  0  ~/app/javascript/application.js
+|4,53,1,0,1680664125,"~/app/javascript/application.js"
+'6  1  0  ~/app/javascript/application.js
+|4,54,1,0,1680664125,"~/app/javascript/application.js"
+'7  2  0  ~/package.json
+|4,55,2,0,1680664095,"~/package.json"
+'8  68  21  ~/Gemfile
+|4,56,68,21,1680663644,"~/Gemfile"
+'9  67  0  ~/Gemfile
+|4,57,67,0,1680663632,"~/Gemfile"
 
 # Jumplist (newest first):
+-'  1  0  ~/app/assets/builds/application.js
+|4,39,1,0,1680664199,"~/app/assets/builds/application.js"
+-'  2  0  ~/app/javascript/application.js
+|4,39,2,0,1680664161,"~/app/javascript/application.js"
+-'  2  0  ~/app/javascript/application.js
+|4,39,2,0,1680664161,"~/app/javascript/application.js"
+-'  2  0  ~/app/javascript/application.js
+|4,39,2,0,1680664144,"~/app/javascript/application.js"
+-'  2  0  ~/app/javascript/application.js
+|4,39,2,0,1680664144,"~/app/javascript/application.js"
+-'  1  0  ~/app/javascript/application.js
+|4,39,1,0,1680664136,"~/app/javascript/application.js"
+-'  1  0  ~/app/javascript/application.js
+|4,39,1,0,1680664136,"~/app/javascript/application.js"
+-'  1  0  ~/app/javascript/application.js
+|4,39,1,0,1680664136,"~/app/javascript/application.js"
+-'  1  0  ~/app/javascript/application.js
+|4,39,1,0,1680664136,"~/app/javascript/application.js"
+-'  1  0  ~/app/javascript/application.js
+|4,39,1,0,1680664125,"~/app/javascript/application.js"
+-'  1  0  ~/app/javascript/application.js
+|4,39,1,0,1680664125,"~/app/javascript/application.js"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  2  0  ~/package.json
+|4,39,2,0,1680664095,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  1  0  ~/package.json
+|4,39,1,0,1680664092,"~/package.json"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
 -'  68  21  ~/Gemfile
 |4,39,68,21,1680663644,"~/Gemfile"
 -'  67  0  ~/Gemfile
 |4,39,67,0,1680663641,"~/Gemfile"
 -'  67  0  ~/Gemfile
-|4,39,67,0,1680663632,"~/Gemfile"
--'  4  10  ~/Gemfile
-|4,39,4,10,1680663377,"~/Gemfile"
--'  4  10  ~/Gemfile
-|4,39,4,10,1680663377,"~/Gemfile"
--'  1  0  ~/yarn.lock
-|4,39,1,0,1680662881,"~/yarn.lock"
--'  1  0  ~/yarn.lock
-|4,39,1,0,1680662881,"~/yarn.lock"
--'  1  0  ~/yarn.lock
-|4,39,1,0,1680662881,"~/yarn.lock"
--'  1  0  ~/yarn.lock
-|4,39,1,0,1680662881,"~/yarn.lock"
--'  4  10  ~/Gemfile
-|4,39,4,10,1680662807,"~/Gemfile"
--'  4  10  ~/Gemfile
-|4,39,4,10,1680662807,"~/Gemfile"
--'  1  0  ~/Gemfile
-|4,39,1,0,1680662804,"~/Gemfile"
--'  1  0  ~/Gemfile
-|4,39,1,0,1680662804,"~/Gemfile"
--'  1  0  ~/Gemfile
-|4,39,1,0,1680662804,"~/Gemfile"
--'  1  0  ~/Gemfile
-|4,39,1,0,1680662804,"~/Gemfile"
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
 
 # History of marks within files (newest to oldest):
+
+> ~/app/assets/builds/application.js
+	*	1680664197	0
+	"	1	0
+
+> ~/app/javascript/application.js
+	*	1680664159	0
+	"	2	0
+	^	3	21
+	.	2	0
+	+	3	20
+	+	2	0
+
+> ~/package.json
+	*	1680664093	0
+	"	2	0
 
 > ~/Gemfile
 	*	1680663642	0
