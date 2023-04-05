@@ -19,7 +19,8 @@ services:
       - "3000:3000"
     #entrypoint:
     #  - bash
-    command: >
+    #command: >
+    #  bash -c "bundle exec rails server -b 0.0.0.0"
     # bash -c "bundle config set path '/home/vendor/bundle' && \
     #     bundle install && \
     #     bundle exec rails webpacker:install && \

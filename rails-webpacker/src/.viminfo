@@ -11,10 +11,10 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
-:q
-|2,0,1680662881,,"q"
 :wq
-|2,0,1680662807,,"wq"
+|2,0,1680663644,,"wq"
+:q
+|2,0,1680663632,,"q"
 
 # Search String History (newest to oldest):
 
@@ -27,12 +27,40 @@
 # Registers:
 
 # File marks:
-'0  1  0  ~/yarn.lock
-|4,48,1,0,1680662881,"~/yarn.lock"
-'1  4  10  ~/Gemfile
-|4,49,4,10,1680662807,"~/Gemfile"
+'0  68  21  ~/Gemfile
+|4,48,68,21,1680663644,"~/Gemfile"
+'1  67  0  ~/Gemfile
+|4,49,67,0,1680663632,"~/Gemfile"
+'2  67  0  ~/Gemfile
+|4,50,67,0,1680663632,"~/Gemfile"
+'3  1  0  ~/yarn.lock
+|4,51,1,0,1680662881,"~/yarn.lock"
+'4  4  10  ~/Gemfile
+|4,52,4,10,1680662807,"~/Gemfile"
+'5  4  10  ~/Gemfile
+|4,53,4,10,1680662807,"~/Gemfile"
+'6  4  10  ~/Gemfile
+|4,54,4,10,1680662807,"~/Gemfile"
+'7  4  10  ~/Gemfile
+|4,55,4,10,1680662807,"~/Gemfile"
 
 # Jumplist (newest first):
+-'  68  21  ~/Gemfile
+|4,39,68,21,1680663644,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663641,"~/Gemfile"
+-'  67  0  ~/Gemfile
+|4,39,67,0,1680663632,"~/Gemfile"
+-'  4  10  ~/Gemfile
+|4,39,4,10,1680663377,"~/Gemfile"
+-'  4  10  ~/Gemfile
+|4,39,4,10,1680663377,"~/Gemfile"
+-'  1  0  ~/yarn.lock
+|4,39,1,0,1680662881,"~/yarn.lock"
+-'  1  0  ~/yarn.lock
+|4,39,1,0,1680662881,"~/yarn.lock"
+-'  1  0  ~/yarn.lock
+|4,39,1,0,1680662881,"~/yarn.lock"
 -'  1  0  ~/yarn.lock
 |4,39,1,0,1680662881,"~/yarn.lock"
 -'  4  10  ~/Gemfile
@@ -43,15 +71,21 @@
 |4,39,1,0,1680662804,"~/Gemfile"
 -'  1  0  ~/Gemfile
 |4,39,1,0,1680662804,"~/Gemfile"
+-'  1  0  ~/Gemfile
+|4,39,1,0,1680662804,"~/Gemfile"
+-'  1  0  ~/Gemfile
+|4,39,1,0,1680662804,"~/Gemfile"
 
 # History of marks within files (newest to oldest):
+
+> ~/Gemfile
+	*	1680663642	0
+	"	68	21
+	^	68	22
+	.	68	21
+	+	4	10
+	+	68	21
 
 > ~/yarn.lock
 	*	1680662880	0
 	"	1	0
-
-> ~/Gemfile
-	*	1680662807	0
-	"	4	10
-	.	4	10
-	+	4	10
