@@ -19,11 +19,12 @@ services:
     volumes:
       - ./src:/var/www/html
       - type: bind
-        source: ./docker/nginx/default.conf 
+        source: ./docker/nginx/default.conf
         target: /etc/nginx/conf.d/default.conf
     ports:
       - "80:80"
       - "443:443"
+      - "9515:9515"
     links:
       - app
   app:
@@ -42,6 +43,18 @@ services:
       - "3000:3000"
     environment:
       DB_HOST: mysql
+  mailpit:
+    image: axllent/mailpit
+    ports:
+       - 8025:8025
+       - 1025:1025
+#  selenium:
+#    image: seleniarm/standalone-chrome:4.3
+#    volumes:
+#      - /dev/shm:/dev/shm
+#    ports:
+#      - "4444:4444"
+#      - "7900:7900"
 volumes:
   mydb:
     driver: local

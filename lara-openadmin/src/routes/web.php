@@ -20,3 +20,5 @@ Route::get('/news/{id}', [Controllers\HomeController::class, 'show'])->name('new
 Route::get('/test1', [Controllers\Mypage\NewsController::class, 'test1']);
 
 Route::post('/test1', [Controllers\Mypage\NewsController::class, 'test1']);
+
+//Route::get('/aaa/', Controllers\XController::class);

@@ -30,4 +30,9 @@
 
     <input type="submit">
 </form>
+
+<form method="post" action="/aaa/4">
+    @csrf
+    <input type="submit">
+</form>
 </body>

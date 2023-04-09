@@ -59,16 +59,16 @@ Router::scope('/', function (RouteBuilder $routes) {
 
     Router::scope('/mypage', function ($routes) {
         $routes->connect('/', ['controller' => 'Mypage']);
-        $routes->connect('/news/', ['controller' => 'News']);
-        $routes->connect('/news/create', ['controller' => 'News', 'action' => 'create']);
-        $routes->connect('/news/store', ['controller' => 'News', 'action' => 'store']);
-        $routes->connect('/news/edit/:id', ['controller' => 'News', 'action' => 'edit'])
-            ->setPatterns(['id' => '\d+'])
-            ->setPass(['id']);
-        $routes->connect('/news/delete', ['controller' => 'News', 'action' => 'delete']);
-        $routes->connect('/news/:id', ['controller' => 'News', 'action' => 'show'])
-            ->setPatterns(['id' => '\d+'])
-            ->setPass(['id']);
+        $routes->connect('/news/*', ['controller' => 'News']);
+//        $routes->connect('/news/create', ['controller' => 'News', 'action' => 'create']);
+//        $routes->connect('/news/store', ['controller' => 'News', 'action' => 'store']);
+//        $routes->connect('/news/edit/:id', ['controller' => 'News', 'action' => 'edit'])
+//            ->setPatterns(['id' => '\d+'])
+//            ->setPass(['id']);
+//        $routes->connect('/news/delete', ['controller' => 'News', 'action' => 'delete']);
+//        $routes->connect('/news/:id', ['controller' => 'News', 'action' => 'show'])
+//            ->setPatterns(['id' => '\d+'])
+//            ->setPass(['id']);
     });
 
     /*

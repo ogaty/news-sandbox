@@ -23,13 +23,11 @@
     </form>
 
     <form wire:submit.prevent="save">
-        <input type="file" wire:model="photo">
+        <input type="file" wire:model="photo" wire:change="save">
 
         @error('photo') <span class="error">{{ $message }}</span> @enderror
 
         <button type="submit">Save Photo</button>
     </form>
-
-    <input type="file" id="miofile" wire:model="miofile">
 
 </div>

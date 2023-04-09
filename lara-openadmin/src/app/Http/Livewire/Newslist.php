@@ -19,8 +19,6 @@ class Newslist extends Component
 
     public $aaa;
 
-    public $miofile;
-
     public function handleChange($id)
     {
         $this->status = 3;
@@ -48,9 +46,14 @@ class Newslist extends Component
 
     }
 
-    public function updatedMiofile()
+    public function updatedPhoto()
     {
-        $this->miofile->store('file');
+        $this->validate([
+            'photo' => 'image|max:1024', // 最大１ＭＢ
+        ]);
+
+        $this->photo->store('photos');
+
     }
 
     public function save()
