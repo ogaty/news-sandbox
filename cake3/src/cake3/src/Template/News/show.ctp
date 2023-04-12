@@ -1,7 +1,7 @@
-<?php echo $newsData->id; ?>
+
+<h1><?php echo $news->title; ?></h1>
+
 <div>
-    <h1><?php echo $newsData->title; ?></h1>
-    <div>
-        <?php echo $newsData->body; ?>
-    </div>
+    <?php echo $news->body; ?>
 </div>
+

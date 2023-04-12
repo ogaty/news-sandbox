@@ -59,24 +59,24 @@ Router::scope('/', function (RouteBuilder $routes) {
 
     Router::scope('/mypage', function ($routes) {
         $routes->connect('/', ['controller' => 'Mypage']);
-        $routes->connect('/news/*', ['controller' => 'News']);
-//        $routes->connect('/news/create', ['controller' => 'News', 'action' => 'create']);
-//        $routes->connect('/news/store', ['controller' => 'News', 'action' => 'store']);
-//        $routes->connect('/news/edit/:id', ['controller' => 'News', 'action' => 'edit'])
-//            ->setPatterns(['id' => '\d+'])
-//            ->setPass(['id']);
-//        $routes->connect('/news/delete', ['controller' => 'News', 'action' => 'delete']);
-//        $routes->connect('/news/:id', ['controller' => 'News', 'action' => 'show'])
-//            ->setPatterns(['id' => '\d+'])
-//            ->setPass(['id']);
+        Router::prefix('Mypage', function ($routes) {
+            $routes->connect('/news/', ['controller' => 'News']);
+            $routes->connect('/news/create', ['controller' => 'News', 'action' => 'create']);
+            $routes->connect('/news/store', ['controller' => 'News', 'action' => 'store']);
+            $routes->connect('/news/edit/:id', ['controller' => 'News', 'action' => 'edit'])
+                ->setPatterns(['id' => '\d+'])
+                ->setPass(['id']);
+            $routes->connect('/news/delete', ['controller' => 'News', 'action' => 'delete']);
+            $routes->connect('/news/:id', ['controller' => 'News', 'action' => 'show'])
+                ->setPatterns(['id' => '\d+'])
+                ->setPass(['id']);
+        });
     });
 
-    /*
-     * Here, we are connecting '/' (base path) to a controller called 'Pages',
-     * its action called 'display', and we pass a param to select the view file
-     * to use (in this case, src/Template/Pages/home.ctp)...
-     */
-    $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+    $routes->connect('/news/:id', ['controller' => 'News', 'action' => 'show'])
+        ->setPatterns([':id' => '[0-9]+'])
+        ->setPass(['id']);
+    $routes->connect('/', ['controller' => 'Home', 'action' => 'index', 'index']);
 
     /*
      * ...and connect the rest of 'Pages' controller's URLs.
