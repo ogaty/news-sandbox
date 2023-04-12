@@ -1,7 +1,7 @@
 <script setup>
 const newsList = [
-  { title: "news1" },
-  { title: "news2" }
+  { title: "news1 via vue" },
+  { title: "news2 via vue" }
 ];
 
 </script>

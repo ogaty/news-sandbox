@@ -1,6 +1,7 @@
 <?php
 /**
  * @var $newsList Cake\ORM\Query
+ * @var $newsListJson array
  */
 ?>
 
@@ -10,6 +11,6 @@ foreach($newsList as $news) {
 }
 ?>
 
-<div id="app"></div>
+<div id="app" data-app="<?php echo htmlspecialchars(json_encode($newsListJson)); ?>"></div>
 
 <script src="/assets/app.js"></script>

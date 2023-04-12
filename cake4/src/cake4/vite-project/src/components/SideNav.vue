@@ -8,7 +8,7 @@ const categories = [
 </script>
 
 <template>
-<div>
+<div :style="{ width: 300 + 'px' }">
   <ul>
     <li v-for="category in categories">
       {{ category.title }}

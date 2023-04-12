@@ -25,13 +25,19 @@ class MainController extends AppController
     public function index()
     {
         $this->News = TableRegistry::getTableLocator()->get('News');
-        $this->set('newsList', $this->News->find('all'));
-        $this->render('/Main/index', 'error');
+        $newsList = $this->News->find('all');
+        $newsListJson = [];
+        foreach ($newsList as $news) {
+            $newsListJson[] = [
+                'id' => $news->id,
+                'title' => $news->title,
+                'body' => $news->body,
+            ];
+        }
 
-//        $this->render('/Main/index');
-//        $mainController = $this->paginate($this->MainController);
-//
-//        $this->set(compact('mainController'));
+        $this->set('newsList', $newsList);
+        $this->set('newsListJson', $newsListJson);
+        $this->render('/Main/index', 'error');
     }
 
     /**
